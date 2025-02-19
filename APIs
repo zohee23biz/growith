@@ -1,0 +1,9 @@
+API
+
+
+1. GetAccessToken
+  - input: IDToken
+  - output: AccessToken
+  - description: 구글계정으로 로그인 시 발행됨.
+
+2.
