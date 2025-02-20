@@ -5,5 +5,6 @@ API
   - input: IDToken
   - output: AccessToken
   - description: 구글계정으로 로그인 시 발행됨.
+  - 들어온 이메일이 회원이 아니라면 400 Bad Request를 리턴한다.
 
 2.
