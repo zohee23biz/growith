@@ -8,5 +8,5 @@ API
   - 들어온 이메일이 회원이 아니라면 400 Bad Request를 리턴한다.
 
 2. AddMember
-  - input: IDToekn, Nickname
+  - input: IDToken, Nickname
   - output: 201
