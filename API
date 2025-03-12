@@ -3,10 +3,13 @@ API
 
 1. GetAccessToken
   - input: IDToken
-  - output: 200, AccessToken
+  - output: 200, AccessToken, Email
   - description: 구글계정으로 로그인 시 발행됨.
-  - 들어온 이메일이 회원이 아니라면 400 Bad Request를 리턴한다.
+  - 들어온 회원이 가입된 회원이 아니면 임시닉네임을 부여해서 G_Members 테이블에 저장한다.
+  - 들어온 회원이 가입된 회원이면 AccessToken을 발행, G_Credentials 테이블에 저장한다.
 
-2. AddMember
+ ------> 같은아이디로 계속로그인하면 Credentails가 계속 저장됨. 해결 할 것!
+
+2. AddMember(사용안함.)
   - input: IDToken, Nickname
   - output: 201
