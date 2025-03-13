@@ -1,7 +1,12 @@
-API
+https://mbwrcjukal.execute-api.ap-northeast-2.amazonaws.com/
 
 
-1. GetAccessToken
+
+
+
+
+
+GetAccessToken
   - input: IDToken
   - output: 200, AccessToken, Email
   - description: 구글계정으로 로그인 시 발행됨.
@@ -10,6 +15,16 @@ API
 
  ------> 같은아이디로 계속로그인하면 Credentails가 계속 저장됨. 해결 할 것!
 
-2. AddMember(사용안함.)
+
+
+
+
+
+
+
+
+
+
+AddMember(사용안함.)
   - input: IDToken, Nickname
   - output: 201
