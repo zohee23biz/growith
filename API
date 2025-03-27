@@ -13,7 +13,16 @@ GetAccessToken
   - 들어온 회원이 가입된 회원이 아니면 임시닉네임을 부여해서 G_Members 테이블에 저장한다.
   - 들어온 회원이 가입된 회원이면 AccessToken을 발행, G_Credentials 테이블에 저장한다.
 
- ------> 같은아이디로 계속로그인하면 Credentails가 계속 저장됨. 해결 할 것!
+  - 유일하게 AccessToken이 필요하지 않는 함수.
+
+
+
+GetMember
+  - input: 없음.
+  - output: {"Email":"zohee@gmail.com", "JoinTime":"1223123", "Nickname":"user1"}
+
+
+
 
 
 
